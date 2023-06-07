@@ -1,0 +1,17 @@
+[package]
+name = "slack-chat-api"
+description = "An API client for Slack"
+version = "0.1.47"
+authors = ["Jess Frazelle <jess@kittycad.io>"]
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/KittyCAD/slack-chat-api"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", default-features = false, features = ["serde"] }
+reqwest = { version = "0.11", features = ["json"] }
+schemars = { version = "0.8", features = ["chrono", "uuid1"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.0", features = ["serde", "v4"] }
